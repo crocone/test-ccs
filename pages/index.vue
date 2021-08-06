@@ -102,7 +102,7 @@ export default {
   components: {
     BIconCart
   },
-  async asyncData({$content, params}) {
+  async asyncData({$content}) {
     // получаем данные из nuxtjs content
     const data = await $content('data').fetch()
     const names = await $content('names').fetch()
@@ -114,7 +114,7 @@ export default {
       alertText: '',
       dataTimer: '',
       courseMin: 20,
-      courseMax: 20,
+      courseMax: 80,
       course: 20,
       cart: {},
     }
